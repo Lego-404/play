@@ -1,0 +1,32 @@
+<html>
+<head><title></title>
+<style>
+	body {font-size: 20; text-align:center; background-color:#BDBDBD;} 
+	b {color:#0100FF;}
+	p {color:#0100FF; font-weight:bold;}
+	h1 {color:#F361A6; text-align:center;}
+	h2 {color:#FFE400; text-align:center;}
+	#layer1 {position:absolute; left:100; top:50;
+			height:500; width:800; z-index:1;
+			background-color:#5CD1E5;}
+	#layer2 {position:absolute; left:200; top:150;
+			height:500; width:800; z-index:2;
+			background-color:#D1B2FF; visibility:hidden}
+	#layer3 {position:absolute; left:300; top:250;
+			height:500; width:800; z-index:3;
+			background-color:#86E57F; visibility:hidden}
+	
+</style>
+</head>
+<body>
+<div id=layer1
+	OnMouseDown="layer2.style.visibility='visible'"><h1>To. (윤)지우에게...</h1><br><br>
+			<b>여길 클릭하면 진짜 편지 나옴</b></div>
+<div id=layer2
+	OnMouseDown="layer3.style.visibility='visible'"><h2>진짜 궁금하니?</h2><br><br>
+			<b>그렇다면 여길 클릭해봐...</b></div>
+<div id=layer3
+	OnMouseDown="layer3.style.visibility='hidden'"><h1>뻥 이 야 ㅋ</h1>
+	<br><br><br>사실 계속 클릭하다보면 나옴</div>
+</body>
+</html>
